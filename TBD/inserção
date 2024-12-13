@@ -1,0 +1,5 @@
+INSERT INTO points_of_interest (name, description, location, category_id)
+VALUES
+  ('Ponto 1', 'Primeiro ponto', ST_SetSRID(ST_MakePoint(10, 10), 4326), 1),
+  ('Ponto 2', 'Segundo ponto', ST_SetSRID(ST_MakePoint(12, 12), 4326), 1),
+  ('Ponto 3', 'Terceiro ponto', ST_SetSRID(ST_MakePoint(14, 14), 4326), 1);

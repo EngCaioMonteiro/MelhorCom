@@ -1,0 +1,10 @@
+SELECT 
+    poi.id,
+    poi.name,
+    poi.description,
+    ST_AsText(poi.location) AS location,
+    cat.name AS category
+FROM 
+    points_of_interest poi
+JOIN 
+    categories cat ON poi.category_id = cat.id;
